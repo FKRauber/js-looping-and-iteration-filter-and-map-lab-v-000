@@ -18,8 +18,8 @@ function exactMatch(drivers, element){
     for (const key in element) {
       exact = driver[key] === element[key];
     }
+    return exact;
   });
-  return exact;
 }
 
 function exactMatchToList(){
