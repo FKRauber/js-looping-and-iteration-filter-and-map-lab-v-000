@@ -22,6 +22,8 @@ function exactMatch(drivers, element){
   });
 }
 
-function exactMatchToList(){
-
+function exactMatchToList(drivers, element){
+  return exactMatch(drivers, element).map(function(driver){
+    return driver.name;
+  });
 }
